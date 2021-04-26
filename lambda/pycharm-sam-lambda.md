@@ -21,3 +21,8 @@
 3. Check the `Build function inside a container` in `SAMCLI`.
 
 4. Click on `Run Locally`
+
+
+#### Tutorial
+
+[https://www.jetbrains.com/pycharm/guide/tutorials/intro-aws/cleanup/](https://www.jetbrains.com/pycharm/guide/tutorials/intro-aws/cleanup/)
