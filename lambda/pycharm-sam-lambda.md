@@ -22,7 +22,25 @@
 
 4. Click on `Run Locally`
 
+### Deploy
+
+1. Right click on project and click on `Deploy Serverless Application`.
+
+2. It requires permission on
+	* AWS Cloud formation
+	* S3
+	* lambda
+	* API Gateway
+	* IAM
+
 
 #### Tutorial
 
 [https://www.jetbrains.com/pycharm/guide/tutorials/intro-aws/cleanup/](https://www.jetbrains.com/pycharm/guide/tutorials/intro-aws/cleanup/)
+
+
+### Troubleshoot Know Problem
+
+1. Docker permission
+
+	Preferences -> Resources -> File Sharing -> Add "/Application"
