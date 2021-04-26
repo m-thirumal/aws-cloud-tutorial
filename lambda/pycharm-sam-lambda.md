@@ -43,4 +43,4 @@
 
 1. Docker permission
 
-	Preferences -> Resources -> File Sharing -> Add "/Application"
+	Preferences -> Resources -> File Sharing -> Add "/Application".
