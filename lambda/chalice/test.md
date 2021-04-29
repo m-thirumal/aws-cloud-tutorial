@@ -12,8 +12,12 @@ create a new `tests/` directory and create a `tests/__init__.py` and a `tests/te
 
 ### Run
 
-    py.test tests/test_app.py
+  	py.test tests/test_app.py
 
 ### Run test with print/logs using flag `-s`
 
-		py.test tests/test_app.py -s
+	py.test tests/test_app.py -s
+
+### Run test with log statement
+
+	pytest --log-cli-level=DEBUG
