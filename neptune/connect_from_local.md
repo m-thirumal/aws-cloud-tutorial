@@ -1,4 +1,4 @@
-### Connect to AWS Neptune from local system
+### Connect to AWS Neptune from the local system
 
 There are many ways to connect to `Amazon Neptune` from outside of the `VPC`, such as setting up a `load balancer` or `VPC peering`.
 
