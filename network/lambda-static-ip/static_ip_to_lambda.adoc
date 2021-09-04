@@ -1,5 +1,7 @@
 = AWS Lambda functions with a static IP
 
+image::lambda-static-ip.svg[static ip]
+
 === Create VPC
 
 1. Create new VPC.
