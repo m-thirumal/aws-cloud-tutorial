@@ -1,0 +1,15 @@
+= Network Address Translation
+
+* NAT device enable instances in the private subnet to access the internet or other resources but prevent the internet from initiating connections to the instance.
+
+== NAT Gateway benifit
+
+1. A security layer grant your internal service access to the internet without beign exposed to the world
+
+* Put your workload safe in private subnet 
+
+* Create `NAT gateway` in the public subnet and route your internet traffic through it
+
+* A NAT gateway has it's `own public IP address` and allows workloads to access the `internet`, using it's public IP address but prevents any connection from internet.
+
+
