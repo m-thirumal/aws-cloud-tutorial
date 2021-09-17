@@ -51,6 +51,8 @@ image::public_route_table_public_subnet.png[Associate subnet]
     * Select public subnet
     * `Public` connectivity type
     * Select / Create `Elastic IP`
+    * Go to created private route table. and add new route with Destination (0.0.0.0/0) and Target (created NAT)
+    * Attach VPC (private subnet) to lambda function.
 
 image::nat.png[NAT]
 
