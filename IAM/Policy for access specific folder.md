@@ -22,7 +22,7 @@
             ],
             "Effect": "Allow",
             "Resource": [
-                "arn:aws:s3:::acta-backup-dev"
+                "arn:aws:s3:::BUCKET-NAME"
             ],
             "Condition": {
                 "StringEquals": {
@@ -43,12 +43,12 @@
             ],
             "Effect": "Allow",
             "Resource": [
-                "arn:aws:s3:::acta-backup-dev"
+                "arn:aws:s3:::BUCKET-NAME"
             ],
             "Condition": {
                 "StringLike": {
                     "s3:prefix": [
-                        "sub-1/*"
+                        "FOLDER-NAME/*"
                     ]
                 }
             }
@@ -61,7 +61,7 @@
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::acta-backup-dev/sub-1/*"
+                "arn:aws:s3:::BUCKET-NAME/FOLDER-NAME/*"
             ]
         }
     ]
