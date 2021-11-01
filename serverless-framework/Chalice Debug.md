@@ -15,7 +15,7 @@ AWS Chalice is a Python micro-framework, designed to provide developers with a f
 A new menu will open, the menu lists all python processes. Select the chalice local process to attach a debugger to it.
 
 
-##Troubleshoot
+## Troubleshoot
 
 Deploy `timeout`
 
