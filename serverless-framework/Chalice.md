@@ -19,7 +19,7 @@ A new menu will open, the menu lists all python processes. Select the chalice lo
 
 1. Deploy `timeout`
 
-    chalice deploy --connection-timeout 120
+    `chalice deploy --connection-timeout 120`
 
 2. Error `botocore.exceptions.ClientError: An error occurred (InvalidArgument) when calling the PutBucketNotificationConfiguration`
 
