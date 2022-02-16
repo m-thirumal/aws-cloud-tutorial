@@ -20,6 +20,13 @@ chmod 600
 ssh -i {.pem} ubuntu@{ip-dns}
 ----
 
+=== [.underline]*Switch to root without password*
+
+[source, bash]
+----
+sudo su -
+----
+
 * Copy files from local system to `ec2`
 
 [source, bash]
