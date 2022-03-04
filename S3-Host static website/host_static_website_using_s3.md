@@ -45,9 +45,10 @@
 	
 	create `A Type`  recordset for the `non-www` domain and select 
 	
-	1. Alias to S3 website endpoint, 
-	2. Select the region of your bucket
-	3. Select your `S3 main bucket` (i.e non-www domain)
+	1. Enable `Alias`
+	2. Alias to S3 website endpoint, 
+	3. Select the region of your bucket
+	4. Select your `S3 main bucket` (i.e non-www domain)
 	
 	create `A Type` recordset for `www` subdomain and repeat the above steps/points except the selecting S3 `www` bucket.
 	
