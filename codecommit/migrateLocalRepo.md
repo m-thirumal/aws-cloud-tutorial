@@ -1,5 +1,5 @@
 
-## Migrating Local Repository to AWS Code Commit
+## Push/Set up Local Repository to AWS Code Commit
 ### Instructions
 
 Initialize your sample app as a git repository:
