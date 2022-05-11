@@ -4,7 +4,7 @@
 
 Initialize your sample app as a git repository:
 
-		$ git init .
+    $ git init
 
 Commit your existing files:
 
