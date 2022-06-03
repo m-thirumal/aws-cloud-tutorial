@@ -8,7 +8,7 @@
 
 ### Command to delete all users
 
-Replace the `Pool Id` in the following command
+Replace the variable `COGNITO_USER_POOL_ID`  with `Pool Id` in the following command
 
 	aws cognito-idp list-users --user-pool-id $COGNITO_USER_POOL_ID |
 	jq -r '.Users | .[] | .Username' |
