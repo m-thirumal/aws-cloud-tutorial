@@ -1,0 +1,44 @@
+= Set up SSH
+* Create `.ssh` folder using `jenkins` user
+
+[source, shell]
+----
+sudo -u jenkins mkdir -m 750 /var/lib/jenkins/.ssh
+----
+
+* Genereate `ssh` using `ssh-keygen`
+
+[source, shell]
+----
+sudo -u jenkins ssh-keygen -f /var/lib/jenkins/.ssh//id_rsa  -t rsa -b 4096 -N ""
+----
+
+* Copy the `public key` and paste it under `IAM` user -> security credentials
+
+[source, shell]
+----
+cat ~/.ssh/id_rsa.pub
+----
+
+* Copy `SSH key ID` and add it to `.ssh/config` file with following information
+
+[source, shell]
+----
+  Host git-codecommit.*.amazonaws.com
+    User {SSHKEYID}
+    IdentityFile ~/.ssh/id_rsa
+----
+
+or 
+
+[source, shell]
+----
+  Host git-codecommit.*.amazonaws.com
+    User {SSHKEYID}
+    IdentityFile ~/.ssh/id_rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+----
+
+* then,  go to jenkin and add `SSH key ID` to `username` and upload `private` key to thhe credential page.
+
