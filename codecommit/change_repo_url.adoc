@@ -1,0 +1,28 @@
+= Change codecommit Repository URL
+
+1. Copy url from the codecommit
+2. Delete remote url
+[source, shell]
+----
+git remote set-url --delete codecommit {old_URL}
+----
+you may get the following error but ignore it.
+[source, shell]
+----
+fatal: Will not delete all non-push URLs
+----
+3. Add new remote url
+[source, shell]
+----
+git remote set-url --add codecommit {new_URL}
+----
+4. Check the URL
+[source,shell]
+----
+git remote -v
+----
+5. Repeat the setp 2
+[source, shell]
+----
+git remote set-url --delete codecommit {old_URL}
+----
