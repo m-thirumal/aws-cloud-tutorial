@@ -1,9 +1,10 @@
 = AWS Cloud Tutorial
 
-1. [Host Static Website in S3](./S3-Host%20static%20website/host_static_website_using_s3.md)
+1. link:./S3-Host%20static%20website/host_static_website_using_s3.md[Host Static Website in S3]
 
-2. [AWS Cognito](./Cognito/Intro.md)
+2. link:Cognito/Intro.md[AWS Cognito]
 
-    * []()
+    * link:Cognito/custom_sms_sender.adoc[AWS Cognito 3rd party SMS integration using lambda trigger]
+    * link:Cognito/delete_all_user_from_user_pool.adoc[Delete all cognito user poll users]
 
-3. [Static IP to AWS Lambda function](./network/lambda-static-ip/static_ip_to_lambda.adoc)
+3. link:./network/lambda-static-ip/static_ip_to_lambda.adoc[Static IP to AWS Lambda function]
