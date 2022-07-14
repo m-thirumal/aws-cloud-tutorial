@@ -2,17 +2,17 @@
 
 * link:./api-gateway[API Gateway]
 
-    * link:./api-gateway/custom_domain[Custom Domain for API Gateway]
+    ** link:./api-gateway/custom_domain[Custom Domain for API Gateway]
 
 * link:./S3-Host%20static%20website/host_static_website_using_s3.md[Host Static Website in S3]
 
 * link:Cognito/Intro.md[AWS Cognito]
 
-    * link:Cognito/custom_sms_sender.adoc[AWS Cognito 3rd party SMS integration using lambda trigger]
-    * link:Cognito/delete_all_user_from_user_pool.adoc[Delete all cognito user poll users]
+    ** link:Cognito/custom_sms_sender.adoc[AWS Cognito 3rd party SMS integration using lambda trigger]
+    ** link:Cognito/delete_all_user_from_user_pool.adoc[Delete all cognito user poll users]
 
 * link:./network/lambda-static-ip/static_ip_to_lambda.adoc[Static IP to AWS Lambda function]
 
 * link:./neptune[Neptune]
 
-    * link:neptune/connect_from_local.adoc[Connect to Neptune DB from local system]
+    ** link:neptune/connect_from_local.adoc[Connect to Neptune DB from local system]
