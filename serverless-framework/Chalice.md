@@ -25,6 +25,8 @@ A new menu will open, the menu lists all python processes. Select the chalice lo
 
     Solution: Make sure `S3` bucket location `Lambda` location are same.
     
+3. Custom API gateway
 
+    Delete `.chalice/deployed` and create new. Make sure API gateway is updated in AWS Console
 
 
