@@ -14,6 +14,7 @@
 {account_id}
 {image_name}
 ----
+==== STEPS
 
 * Retrieve an authentication token and authenticate your Docker client to your registry.
 Use the AWS CLI:
