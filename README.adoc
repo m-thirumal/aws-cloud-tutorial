@@ -14,6 +14,7 @@
 * link:EC2[EC2]
 
     ** link:EC2/Connect_to_EC2.adoc[Connect to EC2]
+    ** link:EC2/Connect_to_EC2_Without_key_pair.adoc[Connect to EC2 without key pair]
     ** link:EC2/Increase%20Disk%20Space.adoc[Increase Disk Space [EBS]]
     ** link:EC2/Assign_Domain_to_Ec2.adoc[Assign domain name/address to the EC2 instance]
 
