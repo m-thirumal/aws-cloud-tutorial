@@ -1,5 +1,11 @@
 = AWS Cloud Tutorial
 
+* link:./codecommit/[Code Commit]
+
+    ** link:codecommit/clone%20using%20ssh.adoc[Clone Repo using SSH]
+    ** link:codecommit/Push%20local%20repo%20to%20codecommit.adoc[Push local repo to codecommit]
+    ** link:codecommit/change_repo_url.adoc[Change repository URL]
+
 * link:./api-gateway[API Gateway]
 
     ** link:./api-gateway/custom_domain.adoc[Custom Domain for API Gateway]
