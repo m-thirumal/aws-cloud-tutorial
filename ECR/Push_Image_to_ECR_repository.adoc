@@ -7,6 +7,14 @@
 
 === Steps to push image
 
+==== Variable
+
+[souce, shell]
+----
+{account_id}
+{image_name}
+----
+
 * Retrieve an authentication token and authenticate your Docker client to your registry.
 Use the AWS CLI:
 
