@@ -23,6 +23,8 @@ Copy the value for the SourceRepoURL and configure a new git remote named codeco
 ----
 git remote add origin https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo
 
+(OR)
+
 git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo
 ----
 Configure the CodeCommit credential helper. Append these lines to the end of your .git/config file:
