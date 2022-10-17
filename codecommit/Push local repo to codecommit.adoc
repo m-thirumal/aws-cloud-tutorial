@@ -6,22 +6,24 @@ Initialize your sample app as a git repository:
 
 [source, shell]
 ----
-$ git init
+git init
 ----
 
 Commit your existing files:
 
 [source, shell]
 ----
-$ git add -A .
-$ git commit -m "Initial commit"
+git add -A .
+git commit -m "Initial commit"
 ----
 
 Copy the value for the SourceRepoURL and configure a new git remote named codecommit. Be sure to use your value of the SourceRepoURL:
 
 [source, shell]
 ----
-$ git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo
+git remote add origin https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo
+
+git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo
 ----
 Configure the CodeCommit credential helper. Append these lines to the end of your .git/config file:
 
@@ -39,7 +41,7 @@ Verify you have a codecommit remote:
 
 [source, shell]
 ----
-$ git remote -v
+git remote -v
 codecommit  https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo (fetch)
 codecommit  https://git-codecommit.us-west-2.amazonaws.com/v1/repos/mytodo (push)
 ----
@@ -48,7 +50,7 @@ Verify the credential helper is installed correctly. Mac users may see an osxkey
 
 [source, shell]
 ----
-$ git config -l | grep helper
+git config -l | grep helper
 credential.helper=osxkeychain
 credential.helper=
 credential.helper=!aws codecommit credential-helper $@
@@ -58,8 +60,10 @@ Verify you can fetch from the codecommit remote:
 
 [source, shell]
 ----
-$ git fetch codecommit
-$ echo $?
+git fetch codecommit
+
+echo $?
+
 0
 ----
 
@@ -72,7 +76,8 @@ Push your changes to the codecommit remote:
 
 [source, shell]
 ----
-$ git push codecommit master
+git push codecommit master
+
 Counting objects: 23, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (18/18), done.
