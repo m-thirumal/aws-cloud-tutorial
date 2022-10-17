@@ -1,7 +1,7 @@
 
 === Increase Volume/Disk space (EBS)
 
-* Select the `Instance`, you want to modify, and select volume.
+* Select the `Instance`, you want to modify, and select `volume` under `storage`.
 * In the volume page select, select the volume and click on `Action` -> `Modify Volume` -> `Enter the volume size`
 
 * Connect to the EC2/Cloud 9 Instance
