@@ -1,4 +1,4 @@
-site_name: Installation & configuring software
+site_name: AWS Service Guide
 theme:
   name: material
   palette:
@@ -36,7 +36,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-repo_url: https://github.com/m-thirumal/installation_guide
-repo_name: m-thirumal/installation_guide
+repo_url: https://github.com/m-thirumal/aws-cloud-tutorial
+repo_name: m-thirumal/aws-cloud-tutorial
 
 
