@@ -2,7 +2,7 @@
 
 * [Code Commit](./codecommit/)
 
-    * [Clone Repo using SSH](codecommit/clone%20using%20ssh.adoc)
+    * [Clone Repo using SSH](codecommit/clone%20using%20ssh.md)
     * [Push local repo to codecommit](codecommit/Push%20local%20repo%20to%20codecommit.adoc)
     * [Change repository URL](codecommit/change_repo_url.adoc)
 
