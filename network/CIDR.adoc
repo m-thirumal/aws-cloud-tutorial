@@ -1,0 +1,43 @@
+= CIDR - Classless inter-domain Routing
+
+== What is CIDR notation/pattern?
+
+Classless Inter-Domain routing reduces the wastage of IP addresses by extra required number of IP address to the users. It represents the IP address along with special number (/n) to specify the number of bits present in the network ID.
+
+
+	172.19.0.0/16
+
+	1010 1100 001 111/ 0000 0000 0000  0000
+
+	Network ID      /  Host ID
+
+    8 + 8 + 8 + 8 => 32 bits
+
+Eg:
+
+192.169.0.1/24
+    `192.169.0` is `network portion/id` and `1` is for `host ID`.
+
+192.169.0.1/16
+    `192.169` is `network portion/id` and `0.1` is for `host ID`
+
+
+== CIDR - VPC [Practical]
+
+1. Create CIDR with availablity od 256 IP address
+
+    172.31.0.0/24
+    Network portion -> 24 bit
+    host portion    -> 8 bit
+
+2. Break VPC into 2 subnet equally
+
+    Subnet 1
+    172.31.0.0/25
+    Network portion -> 25 bit 
+    host portion    -> 7 bit (0 to 127)
+
+    Subnet 2
+    172.31.0.128/25
+    Network portion -> 25 bit
+    host portion    -> 7 bit

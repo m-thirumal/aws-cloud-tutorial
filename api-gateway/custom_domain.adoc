@@ -1,0 +1,21 @@
+== Set up Custom Domain for the API Gateway
+
+=== Prerequisite
+
+* Domain Name
+* Permission to access 
+    ** `Route53`
+    ** `TLS` certificate  `ARN` in `AWS Certificate Manager` (acm)
+    ** API Gateway
+
+=== Set up API Gateway
+
+* Click on `Custom Domain name` -> `Create` -> Give the domain name 
+
+* Select `Edge` and `ACM` certificate from the drop-down in the `Endpoint Configuration`.
+
+=== Link it in Route53
+
+* Create `Simple A record` and select the `Alias to API Gateway` -> `Region` -> and  `endpoint`
+
+=== Chalice framwork can use this custom domain

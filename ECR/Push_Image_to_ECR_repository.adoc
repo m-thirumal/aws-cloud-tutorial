@@ -1,0 +1,48 @@
+== Push docker images to ECR private / public repositories
+
+=== Prerequist
+
+* `AWS-Cli` in your local system
+* Configure `AWS` credentials
+
+=== Steps to push image
+
+==== Variable
+
+[souce, shell]
+----
+{account_id}
+{image_name}
+----
+==== STEPS
+
+* Retrieve an authentication token and authenticate your Docker client to your registry.
+Use the AWS CLI:
+
+[source, shell]
+----
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin {account_id}.dkr.ecr.ap-south-1.amazonaws.com
+----
+
+Note: if you receive an error using the AWS CLI, make sure that you have the latest version of the AWS CLI and Docker installed.
+
+* Build your Docker image using the following command. For information on building a Docker file from scratch, see the instructions here . You can skip this step if your image has already been built:
+
+[source, shell]
+----
+docker build -t {image_name} .
+----
+
+* After the build is completed, tag your image so you can push the image to this repository:
+
+[source, shell]
+----
+docker tag {image_name}:latest {account_id}.dkr.ecr.ap-south-1.amazonaws.com/{image_name}:latest
+----
+
+* Run the following command to push this image to your newly created AWS repository:
+
+[source, shell]
+----
+docker push {account_id}.dkr.ecr.ap-south-1.amazonaws.com/{image_name}:latest
+----

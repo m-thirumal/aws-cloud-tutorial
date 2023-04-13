@@ -1,0 +1,63 @@
+= AWS Lambda functions with a static IP
+
+image::lambda-static-ip.svg[static ip]
+
+=== Create VPC
+
+1. Create new VPC.
+
+image::create_vpc.png[Create VPC]
+
+2. Create `IGW - Internet Gateway` to communicate with the Internet from inside your VPC
+    * Attach VPC witn Internet Gateway
+image::create_igw.png[Create IGW]
+
+3. Create `private & public subnets` 
+    
+    * private subnet
+
+image::private_subnet.png[Private Subnet]
+
+    * public subnet
+
+image::public_subnet.png[Public subnet]
+
+4. Create `private and public Route Table`
+
+    * Private Route Table
+    * Associate `private subnet`
+
+image::private_route_table.png[Private Route Table]
+
+Associate `private subnet`
+
+image:private_route_table_subnet.png[Private Route Table subnet associate]
+
+    * Public Route Table
+        * Create route with destination `0.0.0.0/0` and target `IGW`
+        * Associate public route table with public subnet
+
+image::public_route_table.png[Public Route Table]
+Create route with destination `0.0.0.0/0` and target `IGW`
+
+image::public_subnet_table_igw.png[Route]
+
+Associate public route table with public subnet
+
+image::public_route_table_public_subnet.png[Associate subnet]
+
+5. Create `NAT Gateway`
+
+    * Select public subnet
+    * `Public` connectivity type
+    * Select / Create `Elastic IP`
+    * Go to created private route table. and add new route with Destination (0.0.0.0/0) and Target (created NAT)
+    * Attach VPC (private subnet) to lambda function.
+
+image::nat.png[NAT]
+
+
+
+
+
+
