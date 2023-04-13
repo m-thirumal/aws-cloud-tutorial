@@ -1,16 +1,14 @@
-=== Step 1. Set up your default identity
+## Step 1. Set up your default identity
 
 1. Open Terminal (Ctrl + Alt + T) and enter the following command to set up your default identity
 
-[source, shell]
-----
+```
 ssh-keygen
-----
+```
  
 Eg:
 
-[source, shell]
-----
+```
 thirumal@thirumal:~/git$ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/thirumal/.ssh/id_rsa): 
@@ -35,43 +33,39 @@ The keys randomart image is:
 |. X.B . .        |
 | ..*oE .         |
 +----[SHA256]-----+
-----
+```
 
-=== Step 2 Add the public key to your Account settings
+## Step 2 Add the public key to your Account settings
 
 * Copy your public key using the following command 
 
-[source, shell]
-----
+```
 cat ~/.ssh/id_rsa.pub
-----
+```
 
 * Add/Upload it to your `IAM` -> `security credentials`
 
 * Add the generated AWS `SSH key ID` to `~.ssh/config`
 
-[source, shell]
-----
+```
   Host git-codecommit.*.amazonaws.com
     User {SSHKEYID}
     IdentityFile ~/.ssh/id_rsa
-----
+```
 
 or 
 
-[source, shell]
-----
+```
   Host git-codecommit.*.amazonaws.com
     User {SSHKEYID}
     IdentityFile ~/.ssh/id_rsa
     PubkeyAcceptedAlgorithms +ssh-rsa
     HostkeyAlgorithms +ssh-rsa
-----
+```
 
 * Return to your terminal and clone the repository using
 
-[source, shell]
-----
+```
 git clone {SSH_URL}
-----
+```
 
