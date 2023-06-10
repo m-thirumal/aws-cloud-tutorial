@@ -1,7 +1,6 @@
-# aws-cloud-tutorial
-This repo is available at [https://m-thirumal.github.io/aws-cloud-tutorial/](https://m-thirumal.github.io/aws-cloud-tutorial/)
-
 # AWS Cloud Tutorial
+
+This repo is available at [https://m-thirumal.github.io/aws-cloud-tutorial/](https://m-thirumal.github.io/aws-cloud-tutorial/)
 
 * [Code Commit](docs/codecommit/)
 

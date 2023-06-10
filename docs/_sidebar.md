@@ -1,5 +1,3 @@
-# AWS Cloud Tutorial
-
 * [Code Commit](./codecommit/)
 
     * [Clone Repo using SSH](codecommit/clone%20using%20ssh.md)
