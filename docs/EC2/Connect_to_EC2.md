@@ -1,35 +1,31 @@
-== Connect to EC2 Instance
+## Connect to EC2 Instance
 
-=== [.underline]*Prerequisite*
+### Prerequisite
 
 * Download `.pem` file
 
-=== [.underline]*Login*
+### Login
 
 * Give permission for `.pem` file
 
-[source, bash]
-----
+```bash
 chmod 600
-----
+```
 
 * `Login` to `EC2`
 
-[source, bash]
-----
+```bash
 ssh -i {.pem} ubuntu@{ip-dns}
-----
+```
 
-=== [.underline]*Switch to root without password*
+### Switch to root without password
 
-[source, bash]
-----
+```bash
 sudo su -
-----
+```
 
 * Copy files from local system to `ec2`
 
-[source, bash]
-----
+```bash
 scp -i {.pem} /user/thirumal/file_to_copy.pdf ubuntu@{ip}:/home/ubuntu
-----
+```

@@ -23,10 +23,10 @@
 
 * [EC2](EC2)
 
-    * [Connect to EC2](EC2/Connect_to_EC2.adoc)
-    * [Connect to EC2 without key pair](EC2/Connect_to_EC2_Without_key_pair.adoc)
-    * [Increase Disk Space [EBS]](EC2/Increase%20Disk%20Space.adoc)
-    * [Assign domain name/address to the EC2 instance](EC2/Assign_Domain_to_Ec2.adoc)
+    * [Connect to EC2](EC2/Connect_to_EC2.md)
+    * [Connect to EC2 without key pair](EC2/Connect_to_EC2_Without_key_pair.md)
+    * [Increase Disk Space [EBS]](EC2/Increase%20Disk%20Space.md)
+    * [Assign domain name/address to the EC2 instance](EC2/Assign_Domain_to_Ec2.md)
 
 * [Static IP to AWS Lambda function](./network/lambda-static-ip/static_ip_to_lambda.adoc)
 

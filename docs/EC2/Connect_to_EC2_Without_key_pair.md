@@ -1,18 +1,17 @@
-== Connect to EC2 Instance without key pair
+## Connect to EC2 Instance without key pair
 
-=== [.underline]*Prerequisite*
+### Prerequisite
 
 * root login (OR) sudo login
  
-=== [.underline]*Login*
+### Login
 
 Login using `key pair`, then follow the below steps
 
 
-==== Create new login user [Optiona]
+#### Create new login user [Optional]
 
-[source, bash]
-----
+```bash
 # Add user with home directory & bash shell
 sudo useradd -s /bin/bash -d /home/{home directory} -m {user name}
 # Add bash shell
@@ -21,40 +20,39 @@ sudo chsh -s /bin/bash {userName}
 sudo usermod -aG sudo {username}
 # Change pass
 sudo passwd {userName}
-----
+```
 
-==== Enable password & SSH authentication
+#### Enable password & SSH authentication
 
 * Open `sudo vi /etc/ssh/sshd_config` and modify the following
 
 ** To enable password authentication, uncomment
 
-[source, bash]
-----
+```bash
 #PasswordAuthentication yes
-----
+```
+
 ** To enable root login, uncomment
 
-[source, bash]
-----
+```bash
 #PermitRootLogin yes
-----
+```
 
 ** To enable ssh key login, uncomment
-[source, bash]
-----
+
+```bash
 #PubkeyAuthentication yes
 #AuthorizedKeysFile .ssh/authorized_keys
-----
+```
 
 ** Add user name in
-[source, bash]
-----
+
+```bash
 AllowUsers thirumal ubuntu
-----
+```
 
 ** After modification, restart ssh:
-[source, bash]
-----
+
+```bash
 sudo service ssh restart
-----
+```
