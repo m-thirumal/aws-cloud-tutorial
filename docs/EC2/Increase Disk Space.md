@@ -7,7 +7,7 @@
 * Connect to the EC2/Cloud 9 Instance
 * To verify the file system for each volume, use the `df -hT` command. 
 
-```
+```bash
 thirumal:~/environment $ df -hT
 Filesystem     Type      Size  Used Avail Use% Mounted on
 udev           devtmpfs  476M     0  476M   0% /dev
@@ -27,7 +27,7 @@ tmpfs          tmpfs      98M     0   98M   0% /run/user/1000
 * To check whether the volume has a partition that must be extended, use the lsblk command to display information 
 
 
-```
+```bash
 thirumal:~/environment $ lsblk
 NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 loop0     7:0    0 55.5M  1 loop /snap/core18/1997
@@ -41,7 +41,7 @@ xvda    202:0    0   10G  0 disk
 * The above output shows, `xvda` has one partition
 * Extend/Grow the partition
 
-```
+```bash
 sudo growpart /dev/xvda 1
 
 (OR)
@@ -52,14 +52,14 @@ sudo growpart /dev/nvme0n1 1
 
 or 
 
-```
+```bash
 # resize filesystem
 thirumal.mari:~/environment $ sudo resize2fs /dev/xvda1
 ```
 
 * Check after resizing
 
-```
+```bash
 thirumal.mari:~/environment $ df -hT
 Filesystem     Type      Size  Used Avail Use% Mounted on
 udev           devtmpfs  476M     0  476M   0% /dev
@@ -78,7 +78,7 @@ tmpfs          tmpfs      98M     0   98M   0% /run/user/1000
 
 * Extend the file system.
 
-```
+```bash
 df -hT
 
 sudo xfs_growfs -d /
