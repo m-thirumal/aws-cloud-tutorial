@@ -11,6 +11,9 @@
   * [Increase Disk Space [EBS]](EC2/Increase%20Disk%20Space.md)
   * [Assign domain name/address to the EC2 instance](EC2/Assign_Domain_to_Ec2.md)
 
+* [VPC](vpc/)
+  * [VPC Peering](vpc/vpc%20peering.md)
+
 * [SES](./ses/)
 
   * [Set Up](ses/Set%20up.md)
