@@ -5,10 +5,10 @@ This repo is available at [https://m-thirumal.github.io/aws-cloud-tutorial/](htt
 * [Code Commit](docs/codecommit/)
 
   * [Clone Repo using SSH](docs/codecommit/clone%20using%20ssh.md)
-  * [Push local repo to codecommit](docs/codecommit/Push%20local%20repo%20to%20codecommit.adoc)
-  * [Change repository URL](docs/codecommit/change_repo_url.adoc)
+  * [Push local repo to codecommit](docs/codecommit/Push%20local%20repo%20to%20codecommit.md)
+  * [Change repository URL](docs/codecommit/change_repo_url.md)
 
-* [EC2](docs/EC2)
+* [EC2](EC2/ec2.md)
 
   * [Connect to EC2](docs/EC2/Connect_to_EC2.md)
   * [Connect to EC2 without key pair](docs/EC2/Connect_to_EC2_Without_key_pair.md)
