@@ -25,6 +25,18 @@ This repo is available at [https://m-thirumal.github.io/aws-cloud-tutorial/](htt
 
   * [Push Image to ECR Repository](docs/ECR/Push_Image_to_ECR_repository.adoc)
 
+* [S3](S3/s3.md)
+
+  * [Commands](S3/commands.md)
+
+  * [Install S3 cli](S3/AWS-Cli%20in%20Ubuntu%20&%20Mac.md)
+
+  * [AWS S3 Sync](S3/sync.md)
+
+  * [Cross Account S3 Copy](S3/cross_account_S3_copy.md)
+
+  * [Storage Class Transaction](S3/Storage%20Class%20Transition.md)
+
 * [API Gateway](/docs//api-gateway)
 
   * [Custom Domain for API Gateway](/docs/api-gateway/custom_domain.adoc)

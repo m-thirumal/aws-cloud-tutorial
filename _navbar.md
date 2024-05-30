@@ -28,7 +28,19 @@
 
   * [Custom Domain for API Gateway](api-gateway/custom_domain.adoc)
 
-* [S3](S3-Host%20static%20website/host_static_website_using_s3.md)
+* [S3](S3/s3.md)
+
+  * [Commands](S3/commands.md)
+
+  * [Install S3 cli](S3/AWS-Cli%20in%20Ubuntu%20&%20Mac.md)
+
+  * [AWS S3 Sync](S3/sync.md)
+
+  * [Cross Account S3 Copy](S3/cross_account_S3_copy.md)
+
+  * [Storage Class Transaction](S3/Storage%20Class%20Transition.md)
+
+* [Host static website](S3-Host%20static%20website/host_static_website_using_s3.md)
 
 * [Cognito](Cognito/Intro.md)
 
