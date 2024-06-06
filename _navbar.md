@@ -11,6 +11,7 @@
   * [Connect to EC2 without public IP Address](EC2/Connect_to_EC2_without_ip_address.md)
   * [Increase Disk Space [EBS]](EC2/Increase%20Disk%20Space.md)
   * [Assign domain name/address to the EC2 instance](EC2/Assign_Domain_to_Ec2.md)
+  * [Assign domain name/address to the EC2 instance](EC2/Assign_Domain_to_Ec2.md)
 
 * [VPC](vpc/vpc.md)
   * [VPC Peering](vpc/vpc%20peering.md)
